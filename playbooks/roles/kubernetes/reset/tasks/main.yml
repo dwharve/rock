@@ -46,7 +46,7 @@
 
 - name: Delete Kubernetes directory
   file:
-    path: {{ kube_dir }}
+    path: "{{ kube_dir }}"
     state: absent
 
 - name: Remove Interfaces
