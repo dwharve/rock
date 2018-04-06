@@ -11,7 +11,7 @@
 
 - name: Check to see if Kubernetes directory is empty
   find:
-    paths: {{ kube_dir }}
+    paths: "{{ kube_dir }}"
     file_type: directory
     patterns: "*"
   register: kubernetes_directory
